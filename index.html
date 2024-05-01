@@ -31,23 +31,23 @@
 <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
 			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
 				<label for="fname">Full name<span class="required">*</span></label>
-				<input type="text" id="fname" name="fname">
+				<input type="text" id="fname" name="fname" required>
 				<label for="email">Email<span class="required">*</span></label>
-				<input type="email" id="email" name="email">
+				<input type="email" id="email" name="email" required>
 				<label for="phonenumber">Phone number<span class="required">*</span></label>
-				<input type="tel" id="phonenumber" name="phonenumber">
+				<input type="tel" id="phonenumber" name="phonenumber" required>
 				<fieldset>
 					<legend>Preferred Contact Method<span class="required">*</span></legend>
 					<input type="radio" name="contactPref"
-				  id="PrefPhone" required checked>
+				  id="PrefPhone" value="Phone" checked>
 					<label for="PrefPhone">Phone</label>
 					<input type="radio" name="contactPref"
-					 id="prefEmail">
+					 id="prefEmail" value="Email">
 					<label for="prefEmail">Email</label>
 				  </fieldset>
 				</section>
 				<label for="States">Choose a State<span class="required">*</span></label>
-				<select id="states" name="states">
+				<select id="states" name="states" required>
 					<option value="Alaska">Alaska</option>
 					<option value="Alabama">Alabama</option>
 					<option value="Arkansas">Arkansas </option>
